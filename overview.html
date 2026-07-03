@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founder's Note メディア構造・全体像｜社内資料</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* overview専用の軽微な追加（既存style.cssの.ovwrap/.svgboxを利用） */
+  .ovwrap .tagline{font-size:12px;letter-spacing:.22em;color:var(--gray)}
+  .ov-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:22px 0}
+  .ov-card{border:1px solid var(--line);padding:18px 20px}
+  .ov-card .no{font-size:11px;letter-spacing:.2em;color:var(--gray)}
+  .ov-card h4{font-size:16px;margin:6px 0 8px}
+  .ov-card p{font-size:13px;color:var(--sub);line-height:1.8}
+  .kpi-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  .kpi-table th,.kpi-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  .kpi-table th{background:var(--soft);width:30%;letter-spacing:.06em}
+  .note-line{font-size:12px;color:var(--gray);margin-top:14px;line-height:1.9}
+  .svg-cap{font-size:12px;color:var(--gray);margin-top:8px}
+  svg text{font-family:-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif}
+</style>
+</head>
+<body>
+<a class="mock-flag" href="index.html">◀ モックトップに戻る</a>
+<header class="site"><div class="wrap nav">
+  <a class="logo brand-logo" href="index.html"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></a>
+  <nav class="menu">
+    <a href="interview.html">インタビュー</a>
+    <a href="column.html">経営コラム</a>
+    <a href="index.html#mission">メディアについて</a>
+    <a href="index.html#cta">掲載相談</a>
+  </nav>
+  <span class="tagline">社内資料 ／ 代表MTG用</span>
+</div></header>
+
+<div class="ovwrap">
+  <div class="tagline">INTERNAL — STRATEGY OVERVIEW</div>
+  <h1 class="serif">Founder's Note メディア 全体像・構造図</h1>
+  <p class="desc">経営者インタビューメディア「Founder's Note」の運営モデルと、既存事業との接続を図解した社内資料です。<br>（仮名・モック段階。数値・KPIは設計上の目安）</p>
+
+  <!-- 図1: 目的の優先順位 -->
+  <div class="svgbox">
+    <h3>① このメディアの4つの目的（代表MTG 6/22 確定）</h3>
+    <div class="ov-cards">
+      <div class="ov-card"><div class="no">目的 01</div><h4>権威付け・承認欲求の充足</h4><p>かっこいいメディアに自社事例が掲載されることで、顧客の満足度を高める。</p></div>
+      <div class="ov-card"><div class="no">目的 02</div><h4>SEO効果の最大化</h4><p>質の高いコンテンツを蓄積し、自社サイト全体のSEO評価を向上させる。</p></div>
+      <div class="ov-card"><div class="no">目的 03</div><h4>解約（チャーン）の阻止</h4><p>メディア掲載を通じて顧客との関係性を強化し、解約を防ぐ。</p></div>
+      <div class="ov-card"><div class="no">目的 04</div><h4>新規営業のフック</h4><p>完成したメディア自体を「実績サイト」として活用し、新規獲得の武器とする。</p></div>
+    </div>
+    <p class="svg-cap">※ ターゲット＝企業の「経営者」「リーダー層」。「時代のリーダーが知るべき情報が載るハイエンドメディア」を目指す。</p>
+  </div>
+
+  <!-- 図2: 2ライン並走モデル -->
+  <div class="svgbox">
+    <h3>② 運営モデル：2ライン並走</h3>
+    <svg viewBox="0 0 920 320" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <!-- ライン1 -->
+      <rect x="20" y="30" width="410" height="260" fill="#fafafa" stroke="#111" stroke-width="1.5"/>
+      <text x="40" y="60" font-size="14" letter-spacing="2" fill="#7a7a7a">LINE A</text>
+      <text x="40" y="86" font-size="18" font-weight="700" fill="#111">満足・解約防止ライン</text>
+      <text x="40" y="116" font-size="13" fill="#4a4a4a">半自動インタビュー記事</text>
+      <line x1="40" y1="132" x2="410" y2="132" stroke="#e6e6e6"/>
+      <text x="40" y="158" font-size="12.5" fill="#4a4a4a">・流入は生まない（満足・営業フック専用）</text>
+      <text x="40" y="182" font-size="12.5" fill="#4a4a4a">・掲載で「載りたい」を生み、解約を防ぐ</text>
+      <text x="40" y="206" font-size="12.5" fill="#4a4a4a">・ヒアリング内容を記事代行へ還流</text>
+      <text x="40" y="230" font-size="12.5" fill="#4a4a4a">・スマSEO契約者＝無料／非契約者＝¥15,000</text>
+      <rect x="40" y="248" width="180" height="28" fill="#111"/>
+      <text x="50" y="267" font-size="12" fill="#fff">→ 解約率↓・新規フック</text>
+
+      <!-- ライン2 -->
+      <rect x="490" y="30" width="410" height="260" fill="#0e0e0e" stroke="#0e0e0e"/>
+      <text x="510" y="60" font-size="14" letter-spacing="2" fill="#9a9a9a">LINE B</text>
+      <text x="510" y="86" font-size="18" font-weight="700" fill="#fff">流入・成長ライン</text>
+      <text x="510" y="116" font-size="13" fill="#cfcfcf">経営テーマ × KW設計のSEO記事</text>
+      <line x1="510" y1="132" x2="880" y2="132" stroke="#333"/>
+      <text x="510" y="158" font-size="12.5" fill="#cfcfcf">・読者が検索するKWに答える</text>
+      <text x="510" y="182" font-size="12.5" fill="#cfcfcf">・検索流入・被リンク・メディア成長</text>
+      <text x="510" y="206" font-size="12.5" fill="#cfcfcf">・海外データを一次情報として引用</text>
+      <text x="510" y="230" font-size="12.5" fill="#cfcfcf">・テーマ別に展開（集客／採用／AI活用／コストカット）</text>
+      <rect x="510" y="248" width="160" height="28" fill="#fff"/>
+      <text x="520" y="267" font-size="12" fill="#111">→ 集客エンジン</text>
+
+      <!-- 中央接続 -->
+      <line x1="430" y1="160" x2="490" y2="160" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="436" y="152" font-size="11" fill="#7a7a7a">1ドメイン</text>
+    </svg>
+    <p class="svg-cap">※ 1ドメインに2タイプの記事を並走（インタビュー主・SEO記事従）＝キーエンス型。</p>
+  </div>
+
+  <!-- 図3: サイト構造（テーマ別ノウハウ＋業種別インタビュー） -->
+  <div class="svgbox">
+    <h3>③ サイト構造：経営テーマ別ノウハウ ＋ 業種別インタビュー（6/22変更）</h3>
+    <svg viewBox="0 0 920 340" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <!-- top -->
+      <rect x="380" y="14" width="160" height="44" fill="#111"/>
+      <text x="460" y="41" font-size="14" fill="#fff" text-anchor="middle">Founder's Note</text>
+      <line x1="460" y1="58" x2="460" y2="78" stroke="#111"/>
+      <line x1="235" y1="78" x2="685" y2="78" stroke="#111"/>
+      <line x1="235" y1="78" x2="235" y2="96" stroke="#111"/>
+      <line x1="685" y1="78" x2="685" y2="96" stroke="#111"/>
+
+    <!-- 左：経営コラム（テーマ別・流入） -->
+      <rect x="40" y="96" width="390" height="48" fill="#0e0e0e"/>
+    <text x="235" y="119" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">経営コラム（テーマ別・業種問わず）</text>
+      <text x="235" y="136" font-size="11" fill="#cfcfcf" text-anchor="middle">＝ 流入・成長ライン｜全経営者に汎用</text>
+      <g font-size="12" text-anchor="middle">
+        <rect x="40" y="166" width="92" height="40" fill="#fafafa" stroke="#111"/><text x="86" y="190">集客</text>
+        <rect x="140" y="166" width="92" height="40" fill="#fafafa" stroke="#111"/><text x="186" y="190">採用</text>
+        <rect x="240" y="166" width="92" height="40" fill="#fafafa" stroke="#111"/><text x="286" y="190">AI活用</text>
+        <rect x="340" y="166" width="92" height="40" fill="#fafafa" stroke="#111"/><text x="386" y="184">コスト</text><text x="386" y="200">カット</text>
+      </g>
+      <text x="235" y="226" font-size="11" fill="#7a7a7a" text-anchor="middle">例：集客方法／採用コスト削減／AIでコストカット…</text>
+
+      <!-- 右：経営者インタビュー（業種別・満足） -->
+      <rect x="490" y="96" width="390" height="48" fill="#fafafa" stroke="#111"/>
+      <text x="685" y="119" font-size="13" text-anchor="middle" font-weight="700">経営者インタビュー（業種別でOK）</text>
+      <text x="685" y="136" font-size="11" fill="#7a7a7a" text-anchor="middle">＝ 満足・解約防止ライン</text>
+      <g font-size="11.5" text-anchor="middle">
+        <rect x="490" y="166" width="74" height="40" fill="#fff" stroke="#e6e6e6"/><text x="527" y="190">建築</text>
+        <rect x="570" y="166" width="74" height="40" fill="#fff" stroke="#e6e6e6"/><text x="607" y="190">不動産</text>
+        <rect x="650" y="166" width="74" height="40" fill="#fff" stroke="#e6e6e6"/><text x="687" y="190">医療</text>
+        <rect x="730" y="166" width="74" height="40" fill="#fff" stroke="#e6e6e6"/><text x="767" y="190">美容</text>
+        <rect x="810" y="166" width="68" height="40" fill="#fff" stroke="#e6e6e6"/><text x="844" y="190">士業</text>
+      </g>
+      <!-- 接続線 -->
+      <line x1="235" y1="144" x2="235" y2="166" stroke="#111"/>
+      <line x1="685" y1="144" x2="685" y2="166" stroke="#111"/>
+      <!-- 変更理由 -->
+      <rect x="40" y="252" width="840" height="70" fill="#fff" stroke="#7a7a7a"/>
+      <text x="58" y="276" font-size="12" font-weight="700">変更理由（6/22）：</text>
+      <text x="58" y="296" font-size="12" fill="#4a4a4a">業種別ノウハウは「自社に関係ない」と思われる／集客の下心が透けるリスク。</text>
+      <text x="58" y="314" font-size="12" fill="#4a4a4a">→ 全経営者に共通の関心テーマ（集客・採用・AI活用・コストカット）で展開しハイエンド感を出す。</text>
+    </svg>
+    <p class="svg-cap">※ ノウハウ記事は業種で縛らずテーマ別。インタビューは業種カテゴリでOK。新機能：記事内のSNS誘導ボタン／Yahoo!知恵袋型のQ&A機能を準備中（小田・田森）。</p>
+    <div style="margin-top:14px;padding:14px 16px;border:1px solid #111;background:#fafafa">
+      <div style="font-size:12px;letter-spacing:.1em;color:#7a7a7a;margin-bottom:4px">記事一覧（設計スプレッドシート）</div>
+      <a class="btn" href="https://docs.google.com/spreadsheets/d/1i4flBo1KCSRiXJWGyXNqM9sYntY4kAsLHqVTnjiL4Y8/edit" target="_blank" rel="noopener">📊 経営コラム記事テーマ一覧を開く（集客10／コストカット12／採用10／AI活用10＝計42本）</a>
+    </div>
+  </div>
+
+  <!-- 図4: KPI -->
+  <div class="svgbox">
+    <h3>④ KPI（効果測定）</h3>
+    <table class="kpi-table">
+      <tr><th>解約率</th><td>掲載顧客 vs 非掲載顧客で比較（第一目的の検証）</td></tr>
+      <tr><th>フック契約増</th><td>「掲載」を入口にした新規・アップセル件数</td></tr>
+      <tr><th>メディア経由リード</th><td>SEO記事の検索流入からの問い合わせ数</td></tr>
+      <tr><th>アクセス</th><td>PV・検索流入数・被リンク獲得数（中長期）</td></tr>
+      <tr><th>掲載顧客の順位</th><td>掲載先サイトの検索順位推移（※「上がる」とは断言しない）</td></tr>
+    </table>
+  </div>
+
+  <!-- 注意点 -->
+  <div class="svgbox">
+    <h3>⑤ 認識合わせ済みの注意点</h3>
+    <p class="note-line">
+      ・順位は「上がる」と断言しない（被リンクは中長期効果）<br>
+      ・相互リンクは自然な範囲で（機械的100%相互はスキーム判定リスク）<br>
+      ・デザインは「載りたい」を生むが、集客エンジンはSEO記事（LINE B）<br>
+      ・制作は質問フォーマット＋画像提供→Claude Code/Codexで半自動。<strong>公開前の人手チェック必須</strong>
+    </p>
+  </div>
+
+  <div class="inline-cta">
+    <h4>代表MTG 論点</h4>
+    <p>第一目的＝「インタビュー掲載で満足・解約防止」で合意してよいか。<br>建築業を第一弾として進行する前提でよいか。</p>
+    <a class="btn" href="index.html">モックトップを見る</a>
+  </div>
+</div>
+
+<footer class="site"><div class="wrap foot">
+  <div><div class="footer-logo"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></div>
+    <p style="margin-top:8px;max-width:280px">※ 本ページは社内検討用の構造図です（モック）。</p></div>
+  <div><a href="index.html">モックトップ</a><a href="interview.html">インタビュー例</a><a href="column.html">経営コラム例</a></div>
+  <div><details class="operator"><summary>運営会社</summary><p>株式会社プロパゲート</p></details></div>
+</div></footer>
+</body>
+</html>
