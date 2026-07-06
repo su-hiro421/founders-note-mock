@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ｜Founder's Note</title>
+<link rel="stylesheet" href="style.css">
+<style>
+ .page-wrap{max-width:760px;margin:0 auto;padding:44px 20px 60px}
+ .page-wrap h1.serif{font-size:28px;border-bottom:3px solid #1f6feb;padding-bottom:10px;margin:0 0 6px}
+ .page-wrap .lead{color:#555;margin:0 0 26px;font-size:15px}
+ .cform{display:grid;gap:16px}
+ .cform label{font-size:14px;font-weight:700;color:#333;display:block;margin-bottom:6px}
+ .cform .req{color:#c00;font-size:12px;margin-left:4px}
+ .cform input,.cform select,.cform textarea{width:100%;padding:11px 13px;border:1px solid #cfcabf;border-radius:8px;font-size:15px;font-family:inherit;box-sizing:border-box;background:#fff}
+ .cform textarea{min-height:130px;resize:vertical}
+ .cform .submit{background:#1f6feb;color:#fff;border:none;border-radius:8px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;width:auto;justify-self:start;padding-left:40px;padding-right:40px}
+ .op-table{width:100%;border-collapse:collapse;font-size:15px;background:#fff}
+ .op-table th,.op-table td{border:1px solid #e0dacf;padding:14px 16px;text-align:left;vertical-align:top}
+ .op-table th{background:#f4f2ec;width:32%;white-space:nowrap;font-weight:700}
+ .note{color:#888;font-size:13px;margin-top:22px;background:#faf9f6;border:1px solid #eae6db;border-radius:8px;padding:10px 14px}
+</style>
+</head>
+<body>
+<a class="mock-flag" href="overview.html">これは仮モックです（クリックで回遊できます）／全体像・構造図を見る</a>
+<header class="site editorial-header"><div class="wrap nav">
+  <a class="logo brand-logo" href="index.html"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></a>
+  <nav class="menu">
+    <a href="interview.html">インタビュー</a>
+    <a href="column.html">経営コラム</a>
+    <a href="index.html#mission">メディアについて</a>
+    <a href="index.html#cta">掲載相談</a>
+  </nav>
+</div></header>
+<main>
+<div class="page-wrap">
+  <h1 class="serif">お問い合わせ</h1>
+  <p class="lead">掲載のご相談・取材のご依頼・その他のお問い合わせは、以下のフォームよりお送りください。担当者より折り返しご連絡いたします。</p>
+  <form class="cform" onsubmit="return false;">
+    <div><label>お問い合わせ種別<span class="req">必須</span></label>
+      <select><option>掲載のご相談</option><option>取材のご依頼</option><option>その他のお問い合わせ</option></select></div>
+    <div><label>会社名<span class="req">必須</span></label><input type="text" placeholder="株式会社〇〇"></div>
+    <div><label>お名前<span class="req">必須</span></label><input type="text" placeholder="山田 太郎"></div>
+    <div><label>メールアドレス<span class="req">必須</span></label><input type="email" placeholder="you@example.com"></div>
+    <div><label>電話番号</label><input type="tel" placeholder="03-0000-0000"></div>
+    <div><label>お問い合わせ内容<span class="req">必須</span></label><textarea placeholder="ご相談内容をご記入ください"></textarea></div>
+    <button type="submit" class="submit">送信する</button>
+  </form>
+  <p class="note">※これは仮モックです。送信機能は未実装です（本番実装時に送信先・自動返信を設定します）。</p>
+</div></main>
+<footer class="site"><div class="wrap foot">
+  <div><div class="footer-logo"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></div>
+    <p style="margin-top:8px;max-width:320px">挑む経営者の記録と、現場で使える経営の知恵を届けるメディア。</p></div>
+  <div><a href="interview.html">インタビュー</a><a href="column.html">経営コラム</a><a href="category-kenchiku.html">建築・工事</a></div>
+  <div><a href="#">編集方針</a><a href="contact.html">お問い合わせ</a><a href="operator.html">運営者情報</a>
+    <details class="operator"><summary>運営会社</summary><p>株式会社プロパゲート</p></details></div>
+</div></footer>
+</body>
+</html>
