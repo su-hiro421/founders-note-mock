@@ -5,11 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Founder's Note｜挑む経営者の記録と、次の一手</title>
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* === 2026-07 トップページ リニューアル：モダンゴシック化 === */
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;letter-spacing:.012em}
+.serif{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif !important;font-weight:900;letter-spacing:.015em}
+.mag-hero:before{font-family:"Noto Sans JP",sans-serif;font-weight:900;left:auto;right:24px;top:2px;font-size:70px;color:rgba(17,17,17,.08)}
+.hero-visual{min-height:0;aspect-ratio:2/1}
+.hero-visual img{min-height:0;object-position:center center}
+.mag-hero h1{font-weight:900;letter-spacing:.01em}
+@media(min-width:1081px){.mag-hero-grid{grid-template-columns:.63fr 1.37fr;gap:30px;align-items:center}.mag-hero h1{font-size:32px}}
+@media(max-width:1080px){.mag-hero-grid{grid-template-columns:1fr}.mag-hero h1{font-size:44px}}
+@media(max-width:520px){.mag-hero h1{font-size:30px;max-width:none}}
+.mag-hero-copy p{font-size:16px;line-height:1.9;max-width:540px}
+.hero-quote{font-weight:700;font-size:20px}
+.issue{font-weight:700;letter-spacing:.02em}
+.sec-head.sharp h2{letter-spacing:.02em}
+.value-card h3,.feature-main-card h3,.theme-grid h3,.mission-band h2{font-weight:900}
+/* 新ロゴ（インライン・ゴシック） */
+.fn-logo{display:flex;align-items:center;gap:11px;letter-spacing:0}
+.fn-mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#111;color:#fff;font-weight:900;font-size:16px;letter-spacing:.02em;border-radius:10px}
+.fn-word{font-weight:900;font-size:22px;letter-spacing:.03em;color:#111;line-height:1;white-space:nowrap}
+.fn-word i{color:#c99a3a;font-style:normal}
+.footer-logo .fn-mark{width:34px;height:34px;font-size:14px}
+.footer-logo .fn-word{font-size:19px}
+/* === 注目インタビュー：メイン（左・横長大）＋サムネ3枚（右・横長縦積み） === */
+.feature-showcase{display:grid;grid-template-columns:2fr .8fr;gap:20px;align-items:stretch}
+.feature-main-card{position:relative;display:block;grid-template-columns:none;height:auto;min-height:0;overflow:hidden;background:#000}
+.feature-main-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 26%;transition:transform .4s}
+.feature-main-card:hover img{transform:scale(1.03)}
+.feature-main-card div{position:absolute;left:0;right:0;bottom:0;top:auto;display:block;padding:24px 30px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.82));z-index:1}
+.feature-main-card span{display:block;color:#f0d9a8;margin-bottom:8px}
+.feature-main-card h3{color:#fff;font-size:26px;line-height:1.5;margin:0}
+.feature-side{display:flex;flex-direction:column;gap:20px;height:auto;margin-top:0}
+.feature-side a.side-thumb{position:relative;display:block;padding:0;min-height:0;aspect-ratio:16/9;background:#000;border:1px solid var(--line);overflow:hidden}
+.feature-side a.side-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 14%;display:block;transition:transform .4s}
+.feature-side a.side-thumb:hover img{transform:scale(1.05)}
+.feature-side a.side-thumb span{position:absolute;left:12px;top:12px;margin:0;background:rgba(17,17,17,.85);color:#fff;font-size:12px;letter-spacing:.05em;padding:5px 11px;border-radius:4px;z-index:1}
+.feature-side a.side-thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 58%,rgba(0,0,0,.24))}
+@media(max-width:820px){
+ .feature-showcase{grid-template-columns:1fr;gap:16px}
+ .feature-main-card{aspect-ratio:16/9}
+ .feature-side{flex-direction:row}
+ .feature-side a.side-thumb{flex:1}
+}
+@media(max-width:520px){
+ .feature-side{flex-direction:column}
+}
+/* 掲載条件セクション */
+.terms-section{background:#fff;border-top:1px solid var(--line);padding:52px 0}
+.terms-section .wrap{max-width:820px}
+.terms-box{border:1px solid var(--line);background:#faf9f6;border-radius:12px;padding:22px 28px}
+.terms-box ul{margin:0;padding:0;list-style:none}
+.terms-box li{display:grid;grid-template-columns:190px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid #eae4d8;font-size:14px;line-height:1.8}
+.terms-box li:last-child{border-bottom:0}
+.terms-box li b{font-weight:900}
+.terms-note{font-size:12.5px;color:#888;margin-top:14px}
+@media(max-width:560px){.terms-box li{grid-template-columns:1fr;gap:2px}}
+</style>
 </head>
 <body>
 <a class="mock-flag" href="overview.html">これは仮モックです（クリックで回遊できます）／全体像・構造図を見る</a>
 <header class="site editorial-header"><div class="wrap nav">
-  <a class="logo brand-logo" href="index.html"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></a>
+  <a class="logo brand-logo fn-logo" href="index.html"><span class="fn-word">Founder's&nbsp;Note</span></a>
   <nav class="menu">
     <a href="interview.html">インタビュー</a>
     <a href="column.html">経営コラム</a>
@@ -22,9 +82,7 @@
   <section class="mag-hero">
     <div class="wrap mag-hero-grid">
       <div class="mag-hero-copy">
-        <div class="issue">経営者の決断と現場知を読む</div>
-        <h1 class="serif">挑戦の裏側に、経営のヒントがある。</h1>
-        <p>Founder's Noteは、中小企業の経営者・一人社長の決断、試行錯誤、現場で磨かれた知恵を届ける経営メディアです。インタビューでは事業の原点と転機を、経営コラムでは集客・採用・コストカット・AI活用の実践知を掘り下げます。</p>
+        <h1 class="serif">挑戦の裏側に、<br>経営のヒントがある。</h1>
         <div class="hero-actions">
           <a class="btn fill" href="interview.html">インタビューを読む</a>
           <a class="btn ghost" href="column.html">経営コラムを見る</a>
@@ -32,7 +90,6 @@
       </div>
       <div class="hero-visual">
         <img src="assets/hero-owners-collage.png" alt="複数の中小企業経営者と働く人が並ぶファーストビュー">
-        <div class="hero-quote serif">現場の言葉から、<br>次の一手を見つける。</div>
       </div>
     </div>
   </section>
@@ -40,65 +97,53 @@
   <section class="mission-band" id="mission">
     <div class="wrap mission-grid">
       <div>
-        <div class="kicker">メディアについて</div>
         <h2 class="serif">経営は、数字の裏側に物語がある。</h2>
       </div>
-      <p>創業の理由、守ってきた現場、変えようとしている未来。Founder's Noteは、経営者の言葉から事業の背景を読み解き、同じ課題に向き合う人が次の一手を考えるための視点を届けます。</p>
-      <div class="mission-points">
-        <span>挑戦の記録</span>
-        <span>現場の一次情報</span>
-        <span>実務に効く知恵</span>
-      </div>
+      <p>経営者の言葉から事業の背景を読み解き、同じ課題に向き合う人へ「次の一手」を考える視点を届けます。</p>
     </div>
   </section>
 
   <section class="editorial-values-section"><div class="wrap">
-    <div class="sec-head sharp"><h2 class="serif">Founder's Noteが届けるもの</h2><span class="en">読む価値</span></div>
+    <div class="sec-head sharp"><h2 class="serif">Founder's Noteが届けるもの</h2></div>
     <div class="value-grid">
       <div class="value-card">
         <span>01</span>
         <h3>経営者の決断</h3>
-        <p>なぜ始めたのか、何を変えたのか、どこで迷ったのか。表に出にくい意思決定の背景を、インタビューとして掘り下げます。</p>
+        <p>なぜ始め、何を変え、どこで迷ったのか。表に出にくい意思決定の背景を掘り下げます。</p>
       </div>
       <div class="value-card">
         <span>02</span>
         <h3>現場で磨かれた実践知</h3>
-        <p>集客、採用、利益改善、AI活用。机上の理論ではなく、中小企業の現場で使える考え方と打ち手を届けます。</p>
+        <p>集客・採用・利益改善・AI活用。理論ではなく、現場で使える考え方と打ち手だけを。</p>
       </div>
       <div class="value-card">
         <span>03</span>
         <h3>次の一手につながる視点</h3>
-        <p>成功談だけではなく、失敗、葛藤、突破口まで読むことで、自社の課題を見直すためのヒントが見えてきます。</p>
+        <p>成功だけでなく失敗・葛藤・突破口まで。自社の課題を見直すヒントになります。</p>
       </div>
     </div>
   </div></section>
 
   <section class="feature-section"><div class="wrap">
-    <div class="sec-head sharp"><h2 class="serif">注目インタビュー</h2><span class="en">挑戦の背景を読む</span></div>
+    <div class="sec-head sharp"><h2 class="serif">注目インタビュー</h2></div>
     <div class="feature-showcase">
       <a class="feature-main-card" href="interview.html">
         <img src="assets/hero-construction-owner.png" alt="建築会社の経営者インタビュー">
         <div>
           <span>建築・工事｜集客</span>
           <h3 class="serif">「下請けからの脱却」地域工務店が自社集客に挑んだ3年</h3>
-          <p>価格で比べられる会社から、地域で指名される会社へ。代表が何を変え、どこで壁にぶつかり、どう社内を巻き込んだのかを整理しました。</p>
-          <ul>
-            <li>下請け比率を下げるために変えた営業導線</li>
-            <li>採用にも効き始めた「会社の言語化」</li>
-            <li>現場品質をどう発信へつなげたか</li>
-          </ul>
         </div>
       </a>
       <div class="feature-side">
-        <a href="interview.html"><span>採用</span><b>職人の誇りを、ブランドに。創業40年の工務店が挑む採用改革</b></a>
-        <a href="interview.html"><span>コストカット</span><b>価格競争から降りる。塗装会社が高単価戦略へ踏み切った理由</b></a>
-        <a href="interview.html"><span>AI活用</span><b>少人数でも回る会社へ。現場管理にAIを取り入れた一人社長の実践</b></a>
+        <a class="side-thumb" href="interview.html"><img src="assets/interview-builder-owner.png" alt="採用インタビュー"><span>採用</span></a>
+        <a class="side-thumb" href="interview.html"><img src="assets/interview-paint-owner.png" alt="コストカットインタビュー"><span>コストカット</span></a>
+        <a class="side-thumb" href="interview.html"><img src="assets/interview-renovation-owner.png" alt="AI活用インタビュー"><span>AI活用</span></a>
       </div>
     </div>
   </div></section>
 
   <section class="interview-slider-section"><div class="wrap">
-    <div class="sec-head sharp"><h2 class="serif">新着インタビュー</h2><span class="en">挑戦の背景を読む</span></div>
+    <div class="sec-head sharp"><h2 class="serif">新着インタビュー</h2></div>
     <div class="interview-marquee" aria-label="経営者インタビューの自動スライダー">
       <div class="interview-track">
         <a class="interview-slide" href="interview.html">
@@ -139,8 +184,8 @@
   </div></section>
 
   <section class="knowledge-section"><div class="wrap">
-    <div class="sec-head sharp"><h2 class="serif">経営コラム</h2><span class="en">課題解決のヒント</span></div>
-    <p class="section-lead">経営者の現場から見えてきた課題を、実務で使えるコラムとして届けます。インタビューで会社の物語を読み、コラムで明日からの打ち手を探せる構成です。</p>
+    <div class="sec-head sharp"><h2 class="serif">経営コラム</h2></div>
+    <p class="section-lead">現場から見えた課題を、実務で使えるコラムに。物語を読み、打ち手を探せる構成です。</p>
     <div class="knowledge-grid compact">
       <a class="knowledge-card" href="category-shukyaku.html">
         <div class="ph light"><img src="assets/thumb-marketing-strategy.png" alt="集客戦略を整理するデスク風景"></div>
@@ -193,7 +238,7 @@
   </div></section>
 
   <section class="latest-section"><div class="wrap">
-    <div class="sec-head sharp"><h2 class="serif">特集テーマ</h2><span class="en">経営者が読みたい切り口</span></div>
+    <div class="sec-head sharp"><h2 class="serif">特集テーマ</h2></div>
     <div class="theme-grid">
       <a href="column.html"><span>特集 01</span><h3>地域で選ばれる会社のつくり方</h3><p>紹介、検索、採用、口コミをつなげて、指名される会社になるための発信を整理。</p></a>
       <a href="column.html"><span>特集 02</span><h3>一人社長の成長戦略</h3><p>限られた時間と人員で、営業・採用・業務改善をどう進めるかを掘り下げます。</p></a>
@@ -204,7 +249,7 @@
   <section class="cta editorial-cta elevated" id="cta"><div class="wrap">
     <div class="kicker">掲載相談</div>
     <h3 class="serif">掲載について</h3>
-    <p>Founder's Noteでは、地域や業界で挑戦する経営者の取り組みを掲載しています。事業の背景や代表の想い、現場で磨いてきた強みを編集部が記事としてまとめ、公開後も自社の紹介や採用、営業資料として活用できます。</p>
+    <p>地域や業界で挑戦する経営者の取り組みを、編集部が記事化。公開後は紹介・採用・営業資料としても活用できます。</p>
     <div class="merits">
       <div class="merit"><div class="n">掲載価値 01</div><div class="h">第三者視点で整理</div><div class="d">会社の歩みや代表の考えを、読み物として伝わる形にまとめます。</div></div>
       <div class="merit"><div class="n">掲載価値 02</div><div class="h">公開後も活用できる</div><div class="d">自社サイト、採用、SNS、営業資料などで紹介しやすい記事資産になります。</div></div>
@@ -212,10 +257,21 @@
     </div>
     <a class="btn" href="#">掲載について相談する</a>
   </div></section>
+
+  <section class="terms-section"><div class="wrap">
+    <div class="sec-head sharp"><h2 class="serif">掲載条件</h2></div>
+    <div class="terms-box"><ul>
+      <li><b>掲載料金</b><span>1記事あたり 50,000円（税抜）</span></li>
+      <li><b>掲載形式</b><span>経営者インタビュー記事1本（公開後も継続掲載）</span></li>
+      <li><b>掲載内容</b><span>記事の構成・編集は編集部にお任せください（ご要望は可能な限りお受けします）</span></li>
+      <li><b>請求・公開</b><span>請求書を発行し、入金確認後に制作着手。ヒアリングのご入力から5営業日以内を目安に公開いたします</span></li>
+    </ul></div>
+    <p class="terms-note">※価格・条件は予告なく改定する場合があります。詳細はお問い合わせください。</p>
+  </div></section>
 </main>
 
 <footer class="site"><div class="wrap foot">
-  <div><div class="footer-logo"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></div>
+  <div><div class="footer-logo fn-logo"><span class="fn-word">Founder's&nbsp;Note</span></div>
     <p style="margin-top:8px;max-width:320px">挑む経営者の記録と、現場で使える経営の知恵を届けるメディア。</p></div>
   <div><a href="interview.html">インタビュー</a><a href="column.html">経営コラム</a><a href="category-kenchiku.html">建築・工事</a></div>
   <div><a href="#">編集方針</a><a href="contact.html">お問い合わせ</a><a href="operator.html">運営者情報</a>

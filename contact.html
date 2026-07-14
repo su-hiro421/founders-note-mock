@@ -19,12 +19,19 @@
  .op-table th,.op-table td{border:1px solid #e0dacf;padding:14px 16px;text-align:left;vertical-align:top}
  .op-table th{background:#f4f2ec;width:32%;white-space:nowrap;font-weight:700}
  .note{color:#888;font-size:13px;margin-top:22px;background:#faf9f6;border:1px solid #eae6db;border-radius:8px;padding:10px 14px}
+ .terms-box{border:1px solid #e0dacf;background:#faf9f6;border-radius:10px;padding:20px 22px;margin:0 0 30px}
+ .terms-box h2{font-size:18px;margin:0 0 12px;border-left:4px solid #1f6feb;padding-left:10px}
+ .terms-box ul{margin:0;padding:0;list-style:none}
+ .terms-box li{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid #eae4d8;font-size:14px;line-height:1.75}
+ .terms-box li:last-child{border-bottom:0}
+ .terms-box li b{font-weight:700}
+ @media(max-width:560px){.terms-box li{grid-template-columns:1fr;gap:2px}}
 </style>
 </head>
 <body>
 <a class="mock-flag" href="overview.html">これは仮モックです（クリックで回遊できます）／全体像・構造図を見る</a>
 <header class="site editorial-header"><div class="wrap nav">
-  <a class="logo brand-logo" href="index.html"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></a>
+  <a class="logo brand-logo fn-logo" href="index.html"><span class="fn-word">Founder's&nbsp;Note</span></a>
   <nav class="menu">
     <a href="interview.html">インタビュー</a>
     <a href="column.html">経営コラム</a>
@@ -36,6 +43,15 @@
 <div class="page-wrap">
   <h1 class="serif">お問い合わせ</h1>
   <p class="lead">掲載のご相談・取材のご依頼・その他のお問い合わせは、以下のフォームよりお送りください。担当者より折り返しご連絡いたします。</p>
+  <div class="terms-box">
+    <h2>掲載条件</h2>
+    <ul>
+      <li><b>掲載料金</b><span>1記事あたり 50,000円（税抜）</span></li>
+      <li><b>掲載形式</b><span>経営者インタビュー記事1本（公開後も継続掲載）</span></li>
+      <li><b>掲載内容</b><span>構成・編集は編集部にお任せください（ご要望は可能な限り反映）</span></li>
+      <li><b>請求・公開</b><span>請求書発行 → 入金確認後に制作着手。ヒアリングご入力から5営業日以内に公開</span></li>
+    </ul>
+  </div>
   <form class="cform" onsubmit="return false;">
     <div><label>お問い合わせ種別<span class="req">必須</span></label>
       <select><option>掲載のご相談</option><option>取材のご依頼</option><option>その他のお問い合わせ</option></select></div>
@@ -49,7 +65,7 @@
   <p class="note">※これは仮モックです。送信機能は未実装です（本番実装時に送信先・自動返信を設定します）。</p>
 </div></main>
 <footer class="site"><div class="wrap foot">
-  <div><div class="footer-logo"><img src="assets/logo-founders-note.svg" alt="Founder's Note"></div>
+  <div><div class="footer-logo fn-logo"><span class="fn-word">Founder's&nbsp;Note</span></div>
     <p style="margin-top:8px;max-width:320px">挑む経営者の記録と、現場で使える経営の知恵を届けるメディア。</p></div>
   <div><a href="interview.html">インタビュー</a><a href="column.html">経営コラム</a><a href="category-kenchiku.html">建築・工事</a></div>
   <div><a href="#">編集方針</a><a href="contact.html">お問い合わせ</a><a href="operator.html">運営者情報</a>
